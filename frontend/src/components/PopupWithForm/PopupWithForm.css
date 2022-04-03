@@ -1,0 +1,231 @@
+.popup {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.popup::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000;
+  opacity: 0.5;
+  z-index: -1;
+}
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__container {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 34px 36px 64px 36px;
+  box-sizing: border-box;
+}
+
+.popup__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  border: 0;
+  background-image: url(../../images/close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.popup__close:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+}
+
+.popup__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  /* main/primary */
+  color: #1a1b22;
+  margin: 0;
+}
+
+.popup__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  margin-top: 22px;
+}
+
+.popup__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px 0;
+}
+
+.popup__input-type {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2f71e5;
+  margin: 0;
+}
+
+.popup__input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__input {
+  outline: 0;
+  border: 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.popup__input:focus {
+  border-bottom: 1px solid #000000;
+}
+
+.popup__input-error {
+  display: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+}
+.popup__input-error_active {
+  display: block;
+}
+
+.popup__submit-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+  gap: 8px 0;
+}
+
+.popup__submit-error {
+  align-self: center;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #ff0000;
+}
+
+.popup__submit {
+  width: 100%;
+  height: 64px;
+  background: #2f71e5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  /* main/white */
+  color: #ffffff;
+  border: 0;
+  padding: 0;
+}
+.popup__submit:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+}
+.popup__submit_inactive {
+  background: #e6e8eb;
+  pointer-events: none;
+  color: #b6bcbf;
+}
+
+.popup__link-wrap {
+  max-width: 226px;
+  margin: 16px auto 0 auto;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+
+.popup__link {
+  display: inline-block;
+  color: #2f71e5;
+  margin: 0;
+}
+.popup__link:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+}
+
+.popup__info-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+}
+
+.popup__info-link {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f71e5;
+  margin: 0;
+  margin-top: 14px;
+  text-decoration: none;
+}
+.popup__info-link:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+}
+
+/* Media Queries */
+
+/* popup__container */
+@media screen and (max-width: 540px) {
+  .popup__container {
+    max-width: 320px;
+    max-height: 100%;
+  }
+}
+
+/* popup__close */
+@media screen and (max-width: 540px) {
+  .popup__close {
+    right: 16px;
+  }
+}

@@ -1,0 +1,130 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__container {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 28px 104px 28px 104px;
+}
+
+.footer__copyrights {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #b6bcbf;
+  margin: 0;
+}
+
+.footer__links-container {
+  display: flex;
+  gap: 0 40px;
+}
+
+.footer__links {
+  display: flex;
+  list-style: none;
+  gap: 0 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1a1b22;
+  text-decoration: none;
+}
+.footer__link:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+}
+
+.footer__social-media {
+  list-style: none;
+  display: flex;
+  gap: 0 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__icon:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+}
+.footer__icon_type_gh {
+  background-image: url(../../images/github.svg);
+}
+.footer__icon_type_fb {
+  background-image: url(../../images/fb.svg);
+}
+
+/* Media Queries */
+
+/* footer__container */
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding: 20px 40px 20px 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__container {
+    flex-direction: column-reverse;
+    gap: 38px 0;
+    max-width: 288px;
+    padding: 22px 0;
+  }
+}
+
+/* footer__links-container */
+@media screen and (max-width: 1024px) {
+  .footer__links-container {
+    gap: 0 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__links-container {
+    gap: 0 24px;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* footer__links */
+@media screen and (max-width: 1024px) {
+  .footer__links {
+    gap: 0 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer__links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* footer__link */
+@media screen and (max-width: 720px) {
+  .footer__link {
+    line-height: 48px;
+  }
+}

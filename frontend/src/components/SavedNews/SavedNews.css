@@ -1,0 +1,115 @@
+.articles {
+  padding-top: 80px;
+}
+
+.articles__container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px 106px 56px 106px;
+  margin: 0 auto;
+}
+
+.articles__lable {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  color: rgba(26, 27, 34, 0.5);
+  margin: 0;
+}
+
+.articles__title {
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  /* or 115% */
+  /* main/primary */
+  color: #1a1b22;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.articles__keywords {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  color: #1a1b22;
+  margin: 30px 0 0 0;
+}
+
+.articles__keywords-bold {
+  font-weight: bold;
+}
+
+.articles__cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #f5f6f7;
+  padding: 62px 106px;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .articles {
+    padding-top: 66px;
+  }
+}
+
+/* header__container */
+@media screen and (max-width: 1024px) {
+  .articles__container {
+    padding: 24px 40px 32px 40px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .articles__container {
+    padding: 8px 16px 32px 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__lable {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__keywords {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .articles__keywords {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__cards-container {
+    padding: 32px 40px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .articles__cards-container {
+    padding: 24px 16px;
+  }
+}

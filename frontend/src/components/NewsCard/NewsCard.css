@@ -1,0 +1,200 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.card__image-container {
+  position: relative;
+  width: 100%;
+  height: 272px;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.card__tools {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 24px;
+}
+.card__tools_show {
+  display: block;
+}
+
+.card__image-lable {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 10px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 8px 22px;
+  left: 24px;
+}
+
+.card__button-wrap {
+  position: absolute;
+  right: 24px;
+  display: flex;
+  gap: 0 5px;
+}
+
+.card__button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-position: center;
+  border-radius: 8px;
+  border: 0;
+}
+.card__button:hover {
+  cursor: url("../../images/Pointer.svg"), pointer;
+  background-position: center;
+}
+.card__button_type_bookmark {
+  background: url(../../images/bookmark.svg);
+}
+.card__button_type_bookmark:hover {
+  background: url(../../images/bookmark-hover.svg);
+}
+.card__button_type_bookmark-clicked {
+  background: url(../../images/bookmark-clicked.svg);
+}
+.card__button_type_delete {
+  background: url(../../images/delete.svg);
+}
+.card__button_type_delete:hover {
+  background: url(../../images/delete-hover.svg);
+}
+
+.card__button-message {
+  display: none;
+  width: 182px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  border-radius: 10px;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+}
+.card__button-message_show {
+  display: flex;
+}
+
+.card__body {
+  box-sizing: border-box;
+  padding: 20px 24px;
+}
+
+.card__date {
+  font-family: Source Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  margin: 0;
+}
+
+.card__title {
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+  margin: 12px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card__text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  margin: 16px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.card__source {
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  margin: 40px 0 0 0;
+}
+
+/* Media Queries */
+
+/* card__body */
+@media screen and (max-width: 1024px) {
+  .card__body {
+    padding: 16px 15px;
+  }
+}
+
+/* card__title */
+@media screen and (max-width: 1024px) {
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+/* card__source */
+@media screen and (max-width: 1024px) {
+  .card__source {
+    margin-top: 16px;
+  }
+}
+
+/* card__image-container*/
+@media screen and (max-width: 1024px) {
+  .card__image-container {
+    height: 150px;
+  }
+}
+
+/* card__image-container*/
+@media screen and (max-width: 768px) {
+  .card__image-container {
+    height: 196px;
+  }
+}
