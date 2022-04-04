@@ -2,7 +2,7 @@
 
 A service where users can search for news articles and save them to their profiles.
 
-#### Link to the frontend: https://news-explorer-effip.netlify.app/
+#### Live: https://news-explorer-effip.netlify.app/
 
 #### Technologies and Techniques
 
