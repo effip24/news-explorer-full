@@ -4,7 +4,7 @@ A service where users can search for news articles and save them to their profil
 
 #### Live: https://news-explorer-effip.netlify.app/
 
-<iframe src="https://giphy.com/embed/SMw1pgahzRu3zBS4JB" width="480" height="216" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SMw1pgahzRu3zBS4JB">via GIPHY</a></p>
+![alt-text](https://media.giphy.com/media/SMw1pgahzRu3zBS4JB/giphy.gif)
 
 #### Technologies and Techniques
 
