@@ -35,11 +35,11 @@ A service where users can search for news articles and save them to their profil
 #### first, run the server:
 
 ```
-  git clone https://github.com/effip24/react-around-full.git
+  git clone https://github.com/effip24/news-explorer-full.git
 ```
 
 ```
-  cd react-around-full/backend
+  cd news-explorer-full/backend
 ```
 
 ```
