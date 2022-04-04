@@ -29,18 +29,35 @@ A service where users can search for news articles and save them to their profil
   1024, 768, 425, 320
 ```
 
-#### To run the website locally:
+### run the project locally:
+
+
+#### first, run the server:
 
 ```
-  git clone https://github.com/effip24/news-explorer-frontend.git
+  git clone https://github.com/effip24/react-around-full.git
 ```
 
 ```
-  cd news-explorer-frontend
+  cd react-around-full/backend
 ```
 
 ```
   npm install
+```
+
+```
+  npm run start
+```
+#### second, run the client:
+
+ 
+```
+cd ../frontend
+```
+  
+```
+npm install
 ```
 
 ```
