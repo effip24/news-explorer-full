@@ -1,6 +1,6 @@
 # news-explorer-api
 
-#### Link to the API: https://api.effip24-news.students.nomoreparties.sbs
+#### Link to the API: https://news-explorer-effip-api.herokuapp.com/
 
 #### Technologies and Techniques
 
