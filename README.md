@@ -26,9 +26,7 @@ A service where users can search for news articles and save them to their profil
 ```
   BEM, CSS Flexbox and Grid, JavaScript, ReactJS, NodeJs, ExpressJs, Mongodb
 
-  The website is fully responsive and has a design at the following breakpoints
-
-  1024, 768, 425, 320
+  The website is fully responsive.
 ```
 
 ### run the project locally:
